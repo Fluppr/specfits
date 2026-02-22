@@ -1,0 +1,172 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bulb Base Identifier Tool | SpecFits</title>
+  <meta name="description" content="Answer 3 quick questions to identify your light bulb base type — screw, pin, or bayonet.">
+  <link rel="canonical" href="https://specfits.com/tools/bulb-base-identifier.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bulb Base Identifier Tool | SpecFits">
+  <meta property="og:description" content="Answer 3 quick questions to identify your light bulb base: E26, E12, GU10, G9, G4, MR16, B22, or more.">
+  <meta property="og:url" content="https://specfits.com/tools/bulb-base-identifier.html">
+  <meta property="og:site_name" content="SpecFits">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"Bulb Base Identifier Tool","url":"https://specfits.com/tools/bulb-base-identifier.html","description":"3-question tool to identify your light bulb base type.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://specfits.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://specfits.com/tools/"},{"@type":"ListItem","position":3,"name":"Bulb Base Identifier"}]}]}
+  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied",wait_for_update:500});if(localStorage.getItem("fs_cc")==="accepted")gtag("consent","update",{ad_storage:"granted",ad_user_data:"granted",ad_personalization:"granted",analytics_storage:"granted"});</script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p class="brand"><a href="../index.html">SpecFits</a></p>
+            <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../batteries/index.html">Batteries</a></li>
+          <li><a href="../light-bulbs/index.html">Light Bulbs</a></li>
+          <li><a href="../bulb-bases/index.html">Bulb Bases</a></li>
+          <li><a href="../fuses/index.html">Fuses</a></li>
+          <li><a href="../fasteners/index.html">Fasteners</a></li>
+          <li><a href="../cables/index.html">Cables</a></li>
+          <li class="has-dropdown"><a href="../device-guides/index.html">Guides</a>
+            <ul class="dropdown">
+              <li><a href="../device-guides/index.html">Device Guides</a></li>
+              <li><a href="../identification-guides/index.html">ID Guides</a></li>
+              <li><a href="../cheat-sheets/index.html">Cheat Sheets</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="../tools/index.html">Tools</a>
+            <ul class="dropdown">
+              <li><a href="../tools/battery-finder.html">Battery Finder</a></li>
+              <li><a href="../tools/bulb-base-identifier.html">Bulb Base ID</a></li>
+              <li><a href="../tools/fuse-lookup.html">Fuse Lookup</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Bulb Base Identifier</h1>
+    <p>Answer a few questions about your bulb's base and we'll tell you the standard code.</p>
+
+    <button id="bulb-identifier-start">Start identifying →</button>
+
+    <div id="bulb-identifier-form" style="display:none;"></div>
+    <div id="bulb-identifier-result"></div>
+
+    <noscript>
+      <p class="notice">JavaScript is disabled. Use the static table below instead.</p>
+    </noscript>
+
+    <h2 id="reference-table">Static reference table</h2>
+    <p>If the interactive tool is unavailable, use this table.</p>
+
+    <h3>Screw bases (E-family)</h3>
+    <table>
+      <tr><th>Code</th><th>Diameter</th><th>Voltage</th><th>Common use</th></tr>
+      <tr><td>E12</td><td>12 mm</td><td>120V</td><td>Candelabra (US)</td></tr>
+      <tr><td>E14</td><td>14 mm</td><td>240V</td><td>Candelabra (EU)</td></tr>
+      <tr><td>E26</td><td>26 mm</td><td>120V</td><td>Standard household (US)</td></tr>
+      <tr><td>E27</td><td>27 mm</td><td>240V</td><td>Standard household (EU)</td></tr>
+    </table>
+
+    <h3>Pin bases (G-family)</h3>
+    <table>
+      <tr><th>Code</th><th>Pin spacing</th><th>Pin style</th><th>Voltage</th></tr>
+      <tr><td>G4</td><td>4 mm</td><td>Straight wire</td><td>12V DC</td></tr>
+      <tr><td>GU5.3 (MR16)</td><td>5.3 mm</td><td>Thick wire</td><td>12V AC/DC</td></tr>
+      <tr><td>G9</td><td>9 mm</td><td>Looped wire</td><td>Mains</td></tr>
+      <tr><td>GU10</td><td>10 mm</td><td>Mushroom tip (twist)</td><td>Mains</td></tr>
+      <tr><td>GU24</td><td>24 mm</td><td>Mushroom tip (twist)</td><td>Mains</td></tr>
+    </table>
+
+    <h3>Bayonet bases (B-family)</h3>
+    <table>
+      <tr><th>Code</th><th>Diameter</th><th>Voltage</th><th>Region</th></tr>
+      <tr><td>B22</td><td>22 mm</td><td>240V</td><td>UK, AU, parts of Asia</td></tr>
+    </table>
+
+    <h2>Related resources</h2>
+    <ul>
+      <li><a href="../identification-guides/how-to-measure-a-light-bulb-base.html">How to measure a light bulb base</a></li>
+      <li><a href="../cheat-sheets/light-bulb-bases-quick-reference.html">Printable cheat sheet</a></li>
+      <li><a href="../bulb-bases/index.html">All bulb base reference pages</a></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">SpecFits</p>
+        <p class="footer-tagline">Free compatibility reference for batteries, bulb bases, fuses, fasteners, and cables.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Reference</p>
+        <ul>
+          <li><a href="/batteries/index.html">Batteries</a></li>
+          <li><a href="/light-bulbs/index.html">Light Bulbs</a></li>
+          <li><a href="/bulb-bases/index.html">Bulb Bases</a></li>
+          <li><a href="/fuses/index.html">Fuses</a></li>
+          <li><a href="/fasteners/index.html">Fasteners</a></li>
+          <li><a href="/cables/index.html">Cables</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Guides &amp; Tools</p>
+        <ul>
+          <li><a href="/device-guides/index.html">Device Guides</a></li>
+          <li><a href="/identification-guides/index.html">ID Guides</a></li>
+          <li><a href="/tools/battery-finder.html">Battery Finder</a></li>
+          <li><a href="/tools/bulb-base-identifier.html">Bulb Base ID</a></li>
+          <li><a href="/cheat-sheets/index.html">Cheat Sheets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Company</p>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Use</a></li>
+          <li><a href="#" data-action="cookie-prefs">Cookie Preferences</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SpecFits &mdash; Free informational reference. Verify device requirements before replacing a part.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="../assets/bulb-base-identifier.js"></script>
+  <div id="fs-cb" role="dialog" aria-label="Cookie preferences">
+    <div id="fs-cb-in">
+      <p class="fs-cb-text">We use cookies to serve relevant ads that keep this site free. <a href="/privacy-policy.html">Privacy&nbsp;Policy</a></p>
+      <div class="fs-cb-actions">
+        <button class="fs-cb-btn fs-cb-decline" type="button" onclick="fsCB('declined')">Reject Non-Essential</button>
+        <button class="fs-cb-btn fs-cb-accept" type="button" onclick="fsCB('accepted')">Accept All Cookies</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function fsCB(c) {
+      localStorage.setItem('fs_cc', c);
+      document.getElementById('fs-cb').classList.add('fs-cb-hidden');
+      if (c === 'accepted' && window.gtag) gtag('consent', 'update', {ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
+    }
+    if (localStorage.getItem('fs_cc')) document.getElementById('fs-cb').classList.add('fs-cb-hidden');
+    document.addEventListener('click', function(e) {
+      var t = e.target;
+      if (t && (t.dataset.action === 'cookie-prefs' || t.id === 'open-cookie-prefs' || t.classList.contains('open-cookie-prefs'))) {
+        e.preventDefault();
+        localStorage.removeItem('fs_cc');
+        document.getElementById('fs-cb').classList.remove('fs-cb-hidden');
+      }
+    });
+  </script>
+</body>
+</html>

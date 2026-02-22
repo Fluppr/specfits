@@ -1,0 +1,107 @@
+[
+  {
+    "id": "screw-small",
+    "baseType": "screw",
+    "diameterClass": "small",
+    "indoorOutdoor": "indoor",
+    "result": "E12",
+    "description": "E12 candelabra screw base",
+    "detail": "12mm diameter Edison screw. Standard for US candelabra fixtures, chandeliers, and decorative sconces.",
+    "url": "bases/e12.html"
+  },
+  {
+    "id": "screw-small-eu",
+    "baseType": "screw",
+    "diameterClass": "small",
+    "indoorOutdoor": "eu",
+    "result": "E14",
+    "description": "E14 small Edison screw base",
+    "detail": "14mm diameter Edison screw. Standard for EU candelabra and small decorative fixtures. Runs at 240V.",
+    "url": "bases/e14.html"
+  },
+  {
+    "id": "screw-medium",
+    "baseType": "screw",
+    "diameterClass": "medium",
+    "indoorOutdoor": "indoor",
+    "result": "E26",
+    "description": "E26 medium Edison screw base",
+    "detail": "26mm diameter Edison screw. The standard US household base for table lamps, floor lamps, and most ceiling fixtures.",
+    "url": "bases/e26.html"
+  },
+  {
+    "id": "screw-medium-eu",
+    "baseType": "screw",
+    "diameterClass": "medium",
+    "indoorOutdoor": "eu",
+    "result": "E27",
+    "description": "E27 medium Edison screw base",
+    "detail": "27mm diameter Edison screw. The standard EU/UK household base. Nearly the same size as E26 but not certified for mixing.",
+    "url": "bases/e27.html"
+  },
+  {
+    "id": "pin-wire-small",
+    "baseType": "pin",
+    "pinStyle": "wire",
+    "diameterClass": "small",
+    "indoorOutdoor": "both",
+    "result": "G4",
+    "description": "G4 pin base",
+    "detail": "Two straight 4mm-spaced pins. Used for 12V low-voltage bulbs in landscape, RV, and marine lighting.",
+    "url": "bases/g4.html"
+  },
+  {
+    "id": "pin-wire-medium",
+    "baseType": "pin",
+    "pinStyle": "wire",
+    "diameterClass": "medium",
+    "indoorOutdoor": "both",
+    "result": "GU5.3",
+    "description": "GU5.3 (MR16) pin base",
+    "detail": "Two straight 5.3mm-spaced pins with thicker wires. Used for 12V MR16 spotlights in track and display lighting.",
+    "url": "bases/mr16.html"
+  },
+  {
+    "id": "pin-loop",
+    "baseType": "pin",
+    "pinStyle": "loop",
+    "diameterClass": "medium",
+    "indoorOutdoor": "indoor",
+    "result": "G9",
+    "description": "G9 loop pin base",
+    "detail": "Two looped/folded pins in a capsule form. Mains-voltage (120–240V) base common in European-style wall sconces.",
+    "url": "bases/g9.html"
+  },
+  {
+    "id": "pin-twistlock-mains",
+    "baseType": "pin",
+    "pinStyle": "twistlock",
+    "diameterClass": "large",
+    "indoorOutdoor": "indoor",
+    "result": "GU10",
+    "description": "GU10 twist-lock pin base",
+    "detail": "Two mushroom-tipped pins 10mm apart that lock with a quarter-turn. Mains voltage. Common in recessed downlights and track lighting.",
+    "url": "bases/gu10.html"
+  },
+  {
+    "id": "pin-twistlock-gu24",
+    "baseType": "pin",
+    "pinStyle": "twistlock24",
+    "diameterClass": "xlarge",
+    "indoorOutdoor": "indoor",
+    "result": "GU24",
+    "description": "GU24 twist-lock base",
+    "detail": "Larger twist-lock base with 24mm spacing, designed for CFL/LED energy-code compliance in US recessed lighting.",
+    "url": "bases/gu24.html"
+  },
+  {
+    "id": "bayonet",
+    "baseType": "bayonet",
+    "diameterClass": "medium",
+    "indoorOutdoor": "indoor",
+    "result": "B22",
+    "description": "B22 bayonet cap base",
+    "detail": "22mm push-and-turn bayonet base with two side pins. Standard in UK, Australia, and parts of Asia. Does not screw in.",
+    "url": "bases/b22.html"
+  }
+]

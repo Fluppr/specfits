@@ -1,0 +1,156 @@
+[
+  {
+    "code": "CR2032",
+    "aliases": ["2032", "DL2032", "ECR2032", "BR2032", "KCR2032", "LM2032"],
+    "voltage": "3 V",
+    "chemistry": "Lithium",
+    "dimensions": "20.0 \u00d7 3.2 mm",
+    "capacity": "~225 mAh",
+    "notes": "Most common 20 mm coin cell. Cannot be substituted with CR2025 or CR2016 without a shim \u2014 thinner cells may not make contact.",
+    "equivalents": ["DL2032", "ECR2032", "BR2032"],
+    "url": "../batteries/coin-cells/cr2032.html"
+  },
+  {
+    "code": "CR2025",
+    "aliases": ["2025", "DL2025", "ECR2025", "BR2025"],
+    "voltage": "3 V",
+    "chemistry": "Lithium",
+    "dimensions": "20.0 \u00d7 2.5 mm",
+    "capacity": "~165 mAh",
+    "notes": "Same 20 mm diameter as CR2032 but 0.7 mm thinner. Not a drop-in substitute in most holders.",
+    "equivalents": ["DL2025", "ECR2025"],
+    "url": "../batteries/coin-cells/cr2025.html"
+  },
+  {
+    "code": "CR2016",
+    "aliases": ["2016", "DL2016", "ECR2016", "BR2016"],
+    "voltage": "3 V",
+    "chemistry": "Lithium",
+    "dimensions": "20.0 \u00d7 1.6 mm",
+    "capacity": "~90 mAh",
+    "notes": "Thinnest common 20 mm coin cell. Only fits holders designed for it \u2014 do not substitute CR2032 or CR2025.",
+    "equivalents": ["DL2016", "ECR2016"],
+    "url": "../batteries/coin-cells/cr2016.html"
+  },
+  {
+    "code": "LR44",
+    "aliases": ["AG13", "A76", "157", "GPA76", "GP76A", "L1154", "RW82B", "357A", "303"],
+    "voltage": "1.5 V",
+    "chemistry": "Alkaline",
+    "dimensions": "11.6 \u00d7 5.4 mm",
+    "capacity": "~150 mAh",
+    "notes": "Alkaline version of the 11.6 mm button cell. SR44 is the same size and a drop-in substitute but holds voltage more steadily \u2014 preferred for precision instruments.",
+    "equivalents": ["AG13", "A76", "L1154"],
+    "url": "../batteries/coin-cells/lr44.html"
+  },
+  {
+    "code": "SR44",
+    "aliases": ["357", "SR44W", "SR44SW", "303", "SB-B9", "EPX76", "S1136E"],
+    "voltage": "1.55 V",
+    "chemistry": "Silver oxide",
+    "dimensions": "11.6 \u00d7 5.4 mm",
+    "capacity": "~200 mAh",
+    "notes": "Silver oxide variant of the 11.6 mm button cell. Stable discharge preferred in watches and precision instruments. Physically interchangeable with LR44.",
+    "equivalents": ["357", "303", "EPX76"],
+    "url": "../batteries/coin-cells/sr44.html"
+  },
+  {
+    "code": "AA",
+    "aliases": ["LR6", "MN1500", "AM3", "15A", "R6", "UM3", "HP7", "E91"],
+    "voltage": "1.5 V",
+    "chemistry": "Alkaline",
+    "dimensions": "14.5 \u00d7 50.5 mm",
+    "capacity": "~2000\u20133000 mAh",
+    "notes": "Most widely used cylindrical cell. NiMH rechargeable AA (1.2 V nominal) fits the same holder; confirm the device tolerates 1.2 V before substituting.",
+    "equivalents": ["LR6", "MN1500"],
+    "url": "../batteries/alkaline/aa.html"
+  },
+  {
+    "code": "AAA",
+    "aliases": ["LR03", "MN2400", "AM4", "24A", "R03", "UM4", "HP16", "E92"],
+    "voltage": "1.5 V",
+    "chemistry": "Alkaline",
+    "dimensions": "10.5 \u00d7 44.5 mm",
+    "capacity": "~1000\u20131200 mAh",
+    "notes": "Slimmer than AA \u2014 different diameter and length, not interchangeable. NiMH rechargeable AAA fits the same holder.",
+    "equivalents": ["LR03", "MN2400"],
+    "url": "../batteries/alkaline/aaa.html"
+  },
+  {
+    "code": "9V",
+    "aliases": ["6LR61", "MN1604", "6AM6", "PP3", "1604A", "E-block", "6F22"],
+    "voltage": "9 V",
+    "chemistry": "Alkaline",
+    "dimensions": "26.5 \u00d7 17.5 \u00d7 48.5 mm",
+    "capacity": "~550\u2013600 mAh",
+    "notes": "Rectangular block with snap connector. 6F22 is the carbon-zinc variant \u2014 lower capacity, not recommended for high-drain devices.",
+    "equivalents": ["6LR61", "PP3", "MN1604"],
+    "url": "../batteries/alkaline/9v.html"
+  },
+  {
+    "code": "C",
+    "aliases": ["LR14", "MN1400", "AM2", "14A", "R14", "UM2", "HP11", "E93"],
+    "voltage": "1.5 V",
+    "chemistry": "Alkaline",
+    "dimensions": "26.2 \u00d7 50.0 mm",
+    "capacity": "~7000\u20138000 mAh",
+    "notes": "Mid-size cylindrical. Cannot substitute D or AA \u2014 different diameter.",
+    "equivalents": ["LR14", "MN1400"],
+    "url": "../batteries/alkaline/c.html"
+  },
+  {
+    "code": "D",
+    "aliases": ["LR20", "MN1300", "AM1", "13A", "R20", "UM1", "HP2", "E95", "mono"],
+    "voltage": "1.5 V",
+    "chemistry": "Alkaline",
+    "dimensions": "34.2 \u00d7 61.5 mm",
+    "capacity": "~12000\u201318000 mAh",
+    "notes": "Largest common cylindrical cell. High capacity for sustained high-drain use.",
+    "equivalents": ["LR20", "MN1300"],
+    "url": "../batteries/alkaline/d.html"
+  },
+  {
+    "code": "Size 10",
+    "aliases": ["PR70", "ZA10", "AC10", "DA10", "10A", "P10", "yellow tab"],
+    "voltage": "1.4 V",
+    "chemistry": "Zinc-air",
+    "dimensions": "5.8 \u00d7 3.6 mm",
+    "capacity": "~100 mAh",
+    "notes": "Smallest common hearing aid battery. Yellow pull tab. Remove tab immediately before inserting \u2014 activates in ~60 seconds.",
+    "equivalents": ["PR70", "ZA10"],
+    "url": "../batteries/hearing-aid/10.html"
+  },
+  {
+    "code": "Size 312",
+    "aliases": ["PR41", "ZA312", "AC312", "DA312", "312A", "P312", "brown tab"],
+    "voltage": "1.4 V",
+    "chemistry": "Zinc-air",
+    "dimensions": "7.9 \u00d7 3.6 mm",
+    "capacity": "~175 mAh",
+    "notes": "Most popular hearing aid battery. Brown pull tab. Remove tab immediately before inserting.",
+    "equivalents": ["PR41", "ZA312"],
+    "url": "../batteries/hearing-aid/312.html"
+  },
+  {
+    "code": "Size 13",
+    "aliases": ["PR48", "ZA13", "AC13", "DA13", "13A", "P13", "orange tab"],
+    "voltage": "1.4 V",
+    "chemistry": "Zinc-air",
+    "dimensions": "7.9 \u00d7 5.4 mm",
+    "capacity": "~310 mAh",
+    "notes": "Common in BTE and power hearing aids. Orange pull tab. Same 7.9 mm diameter as Size 312 but 1.8 mm taller \u2014 not interchangeable.",
+    "equivalents": ["PR48", "ZA13"],
+    "url": "../batteries/hearing-aid/13.html"
+  },
+  {
+    "code": "Size 675",
+    "aliases": ["PR44", "ZA675", "AC675", "DA675", "675A", "P675", "blue tab"],
+    "voltage": "1.4 V",
+    "chemistry": "Zinc-air",
+    "dimensions": "11.6 \u00d7 5.4 mm",
+    "capacity": "~650 mAh",
+    "notes": "Largest common hearing aid battery. Blue pull tab. Same 11.6 mm diameter as LR44\/SR44 but different voltage and chemistry \u2014 not interchangeable.",
+    "equivalents": ["PR44", "ZA675"],
+    "url": "../batteries/hearing-aid/675.html"
+  }
+]

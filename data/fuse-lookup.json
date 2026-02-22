@@ -1,0 +1,352 @@
+[
+  {
+    "code": "ATC1",
+    "aliases": ["ATO1", "APR1", "1A blade", "F1A"],
+    "amps": "1 A",
+    "voltage_rating": "32 V DC",
+    "type": "Standard blade (ATC/ATO)",
+    "dimensions": "19.1 mm × 18.6 mm × 5.1 mm",
+    "color": "Black",
+    "notes": "Very low-amperage control circuit. Rare in passenger cars; more common in motorcycles and precision electronics."
+  },
+  {
+    "code": "ATC2",
+    "aliases": ["ATO2", "APR2", "2A blade", "F2A"],
+    "amps": "2 A",
+    "voltage_rating": "32 V DC",
+    "type": "Standard blade (ATC/ATO)",
+    "dimensions": "19.1 mm × 18.6 mm × 5.1 mm",
+    "color": "Gray",
+    "notes": "Used in low-current sensor and control circuits."
+  },
+  {
+    "code": "ATC3",
+    "aliases": ["ATO3", "APR3", "3A blade", "F3A"],
+    "amps": "3 A",
+    "voltage_rating": "32 V DC",
+    "type": "Standard blade (ATC/ATO)",
+    "dimensions": "19.1 mm × 18.6 mm × 5.1 mm",
+    "color": "Violet/Purple",
+    "notes": "Alarm systems, accessory control circuits."
+  },
+  {
+    "code": "ATC5",
+    "aliases": ["ATO5", "APR5", "5A blade", "F5A"],
+    "amps": "5 A",
+    "voltage_rating": "32 V DC",
+    "type": "Standard blade (ATC/ATO)",
+    "dimensions": "19.1 mm × 18.6 mm × 5.1 mm",
+    "color": "Tan/Beige",
+    "notes": "Very common. Used for instruments, gauges, accessories, and low-draw circuits."
+  },
+  {
+    "code": "ATC7.5",
+    "aliases": ["ATO7.5", "APR7.5", "7.5A blade", "F7.5A", "ATC7"],
+    "amps": "7.5 A",
+    "voltage_rating": "32 V DC",
+    "type": "Standard blade (ATC/ATO)",
+    "dimensions": "19.1 mm × 18.6 mm × 5.1 mm",
+    "color": "Brown",
+    "notes": "Cigarette lighter circuits, accessory sockets, radio amplifiers."
+  },
+  {
+    "code": "ATC10",
+    "aliases": ["ATO10", "APR10", "10A blade", "F10A"],
+    "amps": "10 A",
+    "voltage_rating": "32 V DC",
+    "type": "Standard blade (ATC/ATO)",
+    "dimensions": "19.1 mm × 18.6 mm × 5.1 mm",
+    "color": "Red",
+    "notes": "Very common. Interior lights, radio, power windows, instrument cluster."
+  },
+  {
+    "code": "ATC15",
+    "aliases": ["ATO15", "APR15", "15A blade", "F15A"],
+    "amps": "15 A",
+    "voltage_rating": "32 V DC",
+    "type": "Standard blade (ATC/ATO)",
+    "dimensions": "19.1 mm × 18.6 mm × 5.1 mm",
+    "color": "Blue",
+    "notes": "Very common. AC blower, wipers, trailer lighting, accessory circuits."
+  },
+  {
+    "code": "ATC20",
+    "aliases": ["ATO20", "APR20", "20A blade", "F20A"],
+    "amps": "20 A",
+    "voltage_rating": "32 V DC",
+    "type": "Standard blade (ATC/ATO)",
+    "dimensions": "19.1 mm × 18.6 mm × 5.1 mm",
+    "color": "Yellow",
+    "notes": "Power windows, heated seats, headlights (low beam on some vehicles)."
+  },
+  {
+    "code": "ATC25",
+    "aliases": ["ATO25", "APR25", "25A blade", "F25A"],
+    "amps": "25 A",
+    "voltage_rating": "32 V DC",
+    "type": "Standard blade (ATC/ATO)",
+    "dimensions": "19.1 mm × 18.6 mm × 5.1 mm",
+    "color": "Natural/Clear/White",
+    "notes": "Power seats, audio amplifiers, high-draw accessories."
+  },
+  {
+    "code": "ATC30",
+    "aliases": ["ATO30", "APR30", "30A blade", "F30A"],
+    "amps": "30 A",
+    "voltage_rating": "32 V DC",
+    "type": "Standard blade (ATC/ATO)",
+    "dimensions": "19.1 mm × 18.6 mm × 5.1 mm",
+    "color": "Green",
+    "notes": "ABS module, electric fuel pump, cooling fan relay circuits."
+  },
+  {
+    "code": "ATC40",
+    "aliases": ["ATO40", "APR40", "40A blade", "F40A"],
+    "amps": "40 A",
+    "voltage_rating": "32 V DC",
+    "type": "Standard blade (ATC/ATO)",
+    "dimensions": "19.1 mm × 18.6 mm × 5.1 mm",
+    "color": "Orange",
+    "notes": "High-current draw circuits. Some fuse boxes use MAXI blade for 40A instead."
+  },
+  {
+    "code": "ATM5",
+    "aliases": ["APM5", "mini blade 5A", "mini fuse 5A", "ATM-5"],
+    "amps": "5 A",
+    "voltage_rating": "32 V DC",
+    "type": "Mini blade (ATM/APM)",
+    "dimensions": "10.9 mm × 16.3 mm × 3.8 mm",
+    "color": "Tan/Beige",
+    "notes": "Physically smaller than standard ATC. Not interchangeable with ATC fuses. Common in modern vehicles with compact fuse boxes."
+  },
+  {
+    "code": "ATM7.5",
+    "aliases": ["APM7.5", "mini blade 7.5A", "ATM-7.5"],
+    "amps": "7.5 A",
+    "voltage_rating": "32 V DC",
+    "type": "Mini blade (ATM/APM)",
+    "dimensions": "10.9 mm × 16.3 mm × 3.8 mm",
+    "color": "Brown",
+    "notes": "Mini blade format. Not interchangeable with standard ATC."
+  },
+  {
+    "code": "ATM10",
+    "aliases": ["APM10", "mini blade 10A", "ATM-10"],
+    "amps": "10 A",
+    "voltage_rating": "32 V DC",
+    "type": "Mini blade (ATM/APM)",
+    "dimensions": "10.9 mm × 16.3 mm × 3.8 mm",
+    "color": "Red",
+    "notes": "Very common in late-model vehicles with mini fuse boxes."
+  },
+  {
+    "code": "ATM15",
+    "aliases": ["APM15", "mini blade 15A", "ATM-15"],
+    "amps": "15 A",
+    "voltage_rating": "32 V DC",
+    "type": "Mini blade (ATM/APM)",
+    "dimensions": "10.9 mm × 16.3 mm × 3.8 mm",
+    "color": "Blue",
+    "notes": "AC blower, wipers, and accessory circuits in vehicles with mini fuse boxes."
+  },
+  {
+    "code": "ATM20",
+    "aliases": ["APM20", "mini blade 20A", "ATM-20"],
+    "amps": "20 A",
+    "voltage_rating": "32 V DC",
+    "type": "Mini blade (ATM/APM)",
+    "dimensions": "10.9 mm × 16.3 mm × 3.8 mm",
+    "color": "Yellow",
+    "notes": "Power windows, heated seats in vehicles with mini fuse boxes."
+  },
+  {
+    "code": "ATM25",
+    "aliases": ["APM25", "mini blade 25A", "ATM-25"],
+    "amps": "25 A",
+    "voltage_rating": "32 V DC",
+    "type": "Mini blade (ATM/APM)",
+    "dimensions": "10.9 mm × 16.3 mm × 3.8 mm",
+    "color": "Natural/Clear",
+    "notes": "High-draw accessories in mini fuse box vehicles."
+  },
+  {
+    "code": "ATM30",
+    "aliases": ["APM30", "mini blade 30A", "ATM-30"],
+    "amps": "30 A",
+    "voltage_rating": "32 V DC",
+    "type": "Mini blade (ATM/APM)",
+    "dimensions": "10.9 mm × 16.3 mm × 3.8 mm",
+    "color": "Green",
+    "notes": "Higher-current circuits in mini fuse box vehicles."
+  },
+  {
+    "code": "MAXI20",
+    "aliases": ["Maxi blade 20A", "maxi fuse 20A", "PAL20"],
+    "amps": "20 A",
+    "voltage_rating": "32 V DC",
+    "type": "Maxi blade (MAXI/PAL)",
+    "dimensions": "29.2 mm × 26.8 mm × 6.3 mm",
+    "color": "Yellow",
+    "notes": "Larger physical format for higher-current underhood fuse boxes."
+  },
+  {
+    "code": "MAXI30",
+    "aliases": ["Maxi blade 30A", "maxi fuse 30A", "PAL30"],
+    "amps": "30 A",
+    "voltage_rating": "32 V DC",
+    "type": "Maxi blade (MAXI/PAL)",
+    "dimensions": "29.2 mm × 26.8 mm × 6.3 mm",
+    "color": "Green",
+    "notes": "Common underhood circuit — cooling fans, ABS, fuel pump."
+  },
+  {
+    "code": "MAXI40",
+    "aliases": ["Maxi blade 40A", "maxi fuse 40A", "PAL40"],
+    "amps": "40 A",
+    "voltage_rating": "32 V DC",
+    "type": "Maxi blade (MAXI/PAL)",
+    "dimensions": "29.2 mm × 26.8 mm × 6.3 mm",
+    "color": "Orange",
+    "notes": "Alternator output fuse and main power distribution circuits."
+  },
+  {
+    "code": "MAXI50",
+    "aliases": ["Maxi blade 50A", "maxi fuse 50A", "PAL50"],
+    "amps": "50 A",
+    "voltage_rating": "32 V DC",
+    "type": "Maxi blade (MAXI/PAL)",
+    "dimensions": "29.2 mm × 26.8 mm × 6.3 mm",
+    "color": "Red",
+    "notes": "Main battery feeds, high-current distribution."
+  },
+  {
+    "code": "MAXI60",
+    "aliases": ["Maxi blade 60A", "maxi fuse 60A", "PAL60"],
+    "amps": "60 A",
+    "voltage_rating": "32 V DC",
+    "type": "Maxi blade (MAXI/PAL)",
+    "dimensions": "29.2 mm × 26.8 mm × 6.3 mm",
+    "color": "Blue",
+    "notes": "High-current main fuse applications."
+  },
+  {
+    "code": "MAXI70",
+    "aliases": ["Maxi blade 70A", "maxi fuse 70A", "PAL70"],
+    "amps": "70 A",
+    "voltage_rating": "32 V DC",
+    "type": "Maxi blade (MAXI/PAL)",
+    "dimensions": "29.2 mm × 26.8 mm × 6.3 mm",
+    "color": "Tan/Beige",
+    "notes": "Main fuse or battery positive cable protection."
+  },
+  {
+    "code": "MAXI80",
+    "aliases": ["Maxi blade 80A", "maxi fuse 80A", "PAL80"],
+    "amps": "80 A",
+    "voltage_rating": "32 V DC",
+    "type": "Maxi blade (MAXI/PAL)",
+    "dimensions": "29.2 mm × 26.8 mm × 6.3 mm",
+    "color": "Black",
+    "notes": "Main battery fuse, high-current main circuits. Most common highest-rated maxi fuse."
+  },
+  {
+    "code": "AGC1",
+    "aliases": ["AGC-1", "Glass tube 1A", "3AG1"],
+    "amps": "1 A",
+    "voltage_rating": "250 V AC / 32 V DC",
+    "type": "Glass tube (AGC/3AG)",
+    "dimensions": "6.35 mm × 31.8 mm (1/4\" × 1-1/4\")",
+    "color": "—",
+    "notes": "Standard glass cartridge fuse. Used in older electronics, appliances, and some automotive applications."
+  },
+  {
+    "code": "AGC3",
+    "aliases": ["AGC-3", "Glass tube 3A", "3AG3"],
+    "amps": "3 A",
+    "voltage_rating": "250 V AC / 32 V DC",
+    "type": "Glass tube (AGC/3AG)",
+    "dimensions": "6.35 mm × 31.8 mm (1/4\" × 1-1/4\")",
+    "color": "—",
+    "notes": "Common in older stereo, consumer electronics, and appliance service."
+  },
+  {
+    "code": "AGC5",
+    "aliases": ["AGC-5", "Glass tube 5A", "3AG5"],
+    "amps": "5 A",
+    "voltage_rating": "250 V AC / 32 V DC",
+    "type": "Glass tube (AGC/3AG)",
+    "dimensions": "6.35 mm × 31.8 mm (1/4\" × 1-1/4\")",
+    "color": "—",
+    "notes": "Very common in older audio equipment, power supplies, and service panels."
+  },
+  {
+    "code": "AGC10",
+    "aliases": ["AGC-10", "Glass tube 10A", "3AG10"],
+    "amps": "10 A",
+    "voltage_rating": "250 V AC / 32 V DC",
+    "type": "Glass tube (AGC/3AG)",
+    "dimensions": "6.35 mm × 31.8 mm (1/4\" × 1-1/4\")",
+    "color": "—",
+    "notes": "Older appliances, some automotive and industrial equipment."
+  },
+  {
+    "code": "AGC15",
+    "aliases": ["AGC-15", "Glass tube 15A", "3AG15"],
+    "amps": "15 A",
+    "voltage_rating": "250 V AC / 32 V DC",
+    "type": "Glass tube (AGC/3AG)",
+    "dimensions": "6.35 mm × 31.8 mm (1/4\" × 1-1/4\")",
+    "color": "—",
+    "notes": "High-current glass tube fuse for older appliances and power equipment."
+  },
+  {
+    "code": "AGC20",
+    "aliases": ["AGC-20", "Glass tube 20A", "3AG20"],
+    "amps": "20 A",
+    "voltage_rating": "250 V AC / 32 V DC",
+    "type": "Glass tube (AGC/3AG)",
+    "dimensions": "6.35 mm × 31.8 mm (1/4\" × 1-1/4\")",
+    "color": "—",
+    "notes": "High-current glass tube. Often found in older boat and marine applications."
+  },
+  {
+    "code": "ACS5",
+    "aliases": ["micro blade 5A", "micro2 5A", "low-profile 5A"],
+    "amps": "5 A",
+    "voltage_rating": "32 V DC",
+    "type": "Micro blade (ACS/micro2)",
+    "dimensions": "8.6 mm × 11.1 mm × 3.1 mm",
+    "color": "Tan/Beige",
+    "notes": "Smallest common blade fuse format. Used in late-model European and Japanese vehicles with high-density fuse boxes."
+  },
+  {
+    "code": "ACS10",
+    "aliases": ["micro blade 10A", "micro2 10A", "low-profile 10A"],
+    "amps": "10 A",
+    "voltage_rating": "32 V DC",
+    "type": "Micro blade (ACS/micro2)",
+    "dimensions": "8.6 mm × 11.1 mm × 3.1 mm",
+    "color": "Red",
+    "notes": "Micro blade format. Not interchangeable with ATM or ATC fuses."
+  },
+  {
+    "code": "ACS15",
+    "aliases": ["micro blade 15A", "micro2 15A", "low-profile 15A"],
+    "amps": "15 A",
+    "voltage_rating": "32 V DC",
+    "type": "Micro blade (ACS/micro2)",
+    "dimensions": "8.6 mm × 11.1 mm × 3.1 mm",
+    "color": "Blue",
+    "notes": "Common in late-model vehicles with micro2 fuse boxes."
+  },
+  {
+    "code": "ACS20",
+    "aliases": ["micro blade 20A", "micro2 20A", "low-profile 20A"],
+    "amps": "20 A",
+    "voltage_rating": "32 V DC",
+    "type": "Micro blade (ACS/micro2)",
+    "dimensions": "8.6 mm × 11.1 mm × 3.1 mm",
+    "color": "Yellow",
+    "notes": "Micro blade format for higher-draw circuits in compact fuse boxes."
+  }
+]

@@ -1,0 +1,165 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Read a Battery Label | SpecFits</title>
+  <meta name="description" content="A plain-English visual guide to decoding what battery label codes, chemistry prefixes, and numbers actually mean.">
+  <link rel="canonical" href="https://specfits.com/identification-guides/how-to-read-a-battery-label.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to Read a Battery Label | SpecFits">
+  <meta property="og:description" content="Battery label decoder: chemistry prefixes (CR, SR, LR), IEC codes, voltage, and what the numbers mean.">
+  <meta property="og:url" content="https://specfits.com/identification-guides/how-to-read-a-battery-label.html">
+  <meta property="og:site_name" content="SpecFits">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"How to Read a Battery Label","description":"Plain-English guide to decoding battery label codes, chemistry prefixes, and numbers.","url":"https://specfits.com/identification-guides/how-to-read-a-battery-label.html"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://specfits.com/"},{"@type":"ListItem","position":2,"name":"Identification Guides","item":"https://specfits.com/identification-guides/"},{"@type":"ListItem","position":3,"name":"How to Read a Battery Label"}]}]}
+  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied",wait_for_update:500});if(localStorage.getItem("fs_cc")==="accepted")gtag("consent","update",{ad_storage:"granted",ad_user_data:"granted",ad_personalization:"granted",analytics_storage:"granted"});</script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p class="brand"><a href="../index.html">SpecFits</a></p>
+            <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../batteries/index.html">Batteries</a></li>
+          <li><a href="../light-bulbs/index.html">Light Bulbs</a></li>
+          <li><a href="../bulb-bases/index.html">Bulb Bases</a></li>
+          <li><a href="../fuses/index.html">Fuses</a></li>
+          <li><a href="../fasteners/index.html">Fasteners</a></li>
+          <li><a href="../cables/index.html">Cables</a></li>
+          <li class="has-dropdown"><a href="../device-guides/index.html">Guides</a>
+            <ul class="dropdown">
+              <li><a href="../device-guides/index.html">Device Guides</a></li>
+              <li><a href="../identification-guides/index.html">ID Guides</a></li>
+              <li><a href="../cheat-sheets/index.html">Cheat Sheets</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="../tools/index.html">Tools</a>
+            <ul class="dropdown">
+              <li><a href="../tools/battery-finder.html">Battery Finder</a></li>
+              <li><a href="../tools/bulb-base-identifier.html">Bulb Base ID</a></li>
+              <li><a href="../tools/fuse-lookup.html">Fuse Lookup</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>How to read a battery label</h1>
+    <p class="answer-box">The code stamped on a battery tells you its chemistry, shape, voltage, and dimensions — all at once once you know how to decode it.</p>
+
+    <h2>Coin cell codes (CR, LR, SR)</h2>
+    <table>
+      <tr><th>Prefix</th><th>Chemistry</th><th>Voltage</th></tr>
+      <tr><td>CR</td><td>Lithium manganese dioxide</td><td>3V</td></tr>
+      <tr><td>LR</td><td>Alkaline manganese</td><td>1.5V</td></tr>
+      <tr><td>SR</td><td>Silver oxide</td><td>1.55V</td></tr>
+    </table>
+
+    <h2>Numbers after the prefix</h2>
+    <p>For the CR/LR/SR coin cell family: the number encodes the diameter and thickness.</p>
+    <ul>
+      <li><strong>First two digits</strong> = diameter in mm. CR<strong>20</strong>32 = 20mm wide.</li>
+      <li><strong>Last two digits</strong> = thickness in tenths of mm. CR20<strong>32</strong> = 3.2mm thick.</li>
+    </ul>
+    <p>Examples: CR<strong>2032</strong> = 20mm × 3.2mm, CR<strong>2025</strong> = 20mm × 2.5mm, LR<strong>44</strong> = 11.6mm × 5.4mm.</p>
+
+    <h2>Cylindrical alkaline codes (AA, AAA, C, D)</h2>
+    <p>These letters follow the IEC 60086 standard and map to size classifications. AA (LR6), AAA (LR03), C (LR14), D (LR20). The letter prefix on the IEC code identifies chemistry (L = alkaline, S = silver oxide, C = lithium).</p>
+
+    <h2>What if the label is missing?</h2>
+    <p>Measure diameter and thickness with a ruler or calipers, then match dimensions to the <a href="../cheat-sheets/coin-cell-equivalents.html">coin cell cheat sheet</a>. For alkaline AA/AAA, diameter immediately distinguishes them (14.5mm = AA, 10.5mm = AAA).</p>
+
+    <h2>Common identifiers by region</h2>
+    <table>
+      <tr><th>IEC code</th><th>Common name</th><th>ANSI/US name</th></tr>
+      <tr><td>LR6</td><td>AA</td><td>15A</td></tr>
+      <tr><td>LR03</td><td>AAA</td><td>24A</td></tr>
+      <tr><td>LR14</td><td>C</td><td>14A</td></tr>
+      <tr><td>LR20</td><td>D</td><td>13A</td></tr>
+      <tr><td>6LR61</td><td>9V block</td><td>1604A</td></tr>
+    </table>
+
+    <h2>Related pages</h2>
+    <ul>
+      <li><a href="../batteries/coin-cells/index.html">Coin cell reference pages</a></li>
+      <li><a href="../batteries/alkaline/index.html">Alkaline reference pages</a></li>
+      <li><a href="../cheat-sheets/coin-cell-equivalents.html">Printable cheat sheet</a></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">SpecFits</p>
+        <p class="footer-tagline">Free compatibility reference for batteries, bulb bases, fuses, fasteners, and cables.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Reference</p>
+        <ul>
+          <li><a href="/batteries/index.html">Batteries</a></li>
+          <li><a href="/light-bulbs/index.html">Light Bulbs</a></li>
+          <li><a href="/bulb-bases/index.html">Bulb Bases</a></li>
+          <li><a href="/fuses/index.html">Fuses</a></li>
+          <li><a href="/fasteners/index.html">Fasteners</a></li>
+          <li><a href="/cables/index.html">Cables</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Guides &amp; Tools</p>
+        <ul>
+          <li><a href="/device-guides/index.html">Device Guides</a></li>
+          <li><a href="/identification-guides/index.html">ID Guides</a></li>
+          <li><a href="/tools/battery-finder.html">Battery Finder</a></li>
+          <li><a href="/tools/bulb-base-identifier.html">Bulb Base ID</a></li>
+          <li><a href="/cheat-sheets/index.html">Cheat Sheets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Company</p>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Use</a></li>
+          <li><a href="#" data-action="cookie-prefs">Cookie Preferences</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SpecFits &mdash; Free informational reference. Verify device requirements before replacing a part.</p>
+    </div>
+  </div>
+</footer>
+  <div id="fs-cb" role="dialog" aria-label="Cookie preferences">
+    <div id="fs-cb-in">
+      <p class="fs-cb-text">We use cookies to serve relevant ads that keep this site free. <a href="/privacy-policy.html">Privacy&nbsp;Policy</a></p>
+      <div class="fs-cb-actions">
+        <button class="fs-cb-btn fs-cb-decline" type="button" onclick="fsCB('declined')">Reject Non-Essential</button>
+        <button class="fs-cb-btn fs-cb-accept" type="button" onclick="fsCB('accepted')">Accept All Cookies</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function fsCB(c) {
+      localStorage.setItem('fs_cc', c);
+      document.getElementById('fs-cb').classList.add('fs-cb-hidden');
+      if (c === 'accepted' && window.gtag) gtag('consent', 'update', {ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
+    }
+    if (localStorage.getItem('fs_cc')) document.getElementById('fs-cb').classList.add('fs-cb-hidden');
+    document.addEventListener('click', function(e) {
+      var t = e.target;
+      if (t && (t.dataset.action === 'cookie-prefs' || t.id === 'open-cookie-prefs' || t.classList.contains('open-cookie-prefs'))) {
+        e.preventDefault();
+        localStorage.removeItem('fs_cc');
+        document.getElementById('fs-cb').classList.remove('fs-cb-hidden');
+      }
+    });
+  </script>
+</body>
+</html>

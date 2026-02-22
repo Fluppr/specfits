@@ -1,0 +1,266 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fuse Lookup — Automotive Fuse Code Reference | SpecFits</title>
+  <meta name="description" content="Look up any automotive fuse code (ATC5, ATM10, MAXI40, AGC5 and more) to get amperage, color code, dimensions, type, and aliases.">
+  <link rel="canonical" href="https://specfits.com/tools/fuse-lookup.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fuse Lookup — Automotive Fuse Code Reference | SpecFits">
+  <meta property="og:description" content="Type any fuse code or description to get amperage, color, size, type, and alias cross-reference.">
+  <meta property="og:url" content="https://specfits.com/tools/fuse-lookup.html">
+  <meta property="og:site_name" content="SpecFits">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"Fuse Lookup","url":"https://specfits.com/tools/fuse-lookup.html","description":"Type any automotive fuse code or alias to get amperage, color, dimensions, and type.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://specfits.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://specfits.com/tools/"},{"@type":"ListItem","position":3,"name":"Fuse Lookup","item":"https://specfits.com/tools/fuse-lookup.html"}]}]}
+  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied",wait_for_update:500});if(localStorage.getItem("fs_cc")==="accepted")gtag("consent","update",{ad_storage:"granted",ad_user_data:"granted",ad_personalization:"granted",analytics_storage:"granted"});</script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p class="brand"><a href="../index.html">SpecFits</a></p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../batteries/index.html">Batteries</a></li>
+          <li><a href="../light-bulbs/index.html">Light Bulbs</a></li>
+          <li><a href="../bulb-bases/index.html">Bulb Bases</a></li>
+          <li><a href="../fuses/index.html">Fuses</a></li>
+          <li><a href="../fasteners/index.html">Fasteners</a></li>
+          <li><a href="../cables/index.html">Cables</a></li>
+          <li class="has-dropdown"><a href="../device-guides/index.html">Guides</a>
+            <ul class="dropdown">
+              <li><a href="../device-guides/index.html">Device Guides</a></li>
+              <li><a href="../identification-guides/index.html">ID Guides</a></li>
+              <li><a href="../cheat-sheets/index.html">Cheat Sheets</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="../tools/index.html">Tools</a>
+            <ul class="dropdown">
+              <li><a href="../tools/battery-finder.html">Battery Lookup</a></li>
+              <li><a href="../tools/bulb-base-identifier.html">Bulb Base ID</a></li>
+              <li><a href="../tools/fuse-lookup.html">Fuse Lookup</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <ol>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../tools/index.html">Tools</a></li>
+        <li>Fuse Lookup</li>
+      </ol>
+    </nav>
+
+    <h1>Fuse lookup</h1>
+    <p>Type a fuse code, type, color, or amperage. Results update as you type.</p>
+
+    <div class="notice" style="margin-bottom:1.5rem">
+      <strong>Where to find the code:</strong> The code is printed on the fuse body (e.g., <code>ATC15</code>, <code>ATM10</code>) or stamped on the metal terminals. If the print is worn, the color of the fuse body tells you the amperage &mdash; see the <a href="../cheat-sheets/fuse-color-codes.html">fuse color codes chart</a>. The vehicle owner&rsquo;s manual also lists each fuse slot, rating, and circuit.
+    </div>
+
+    <div class="notice" style="background:var(--color-warning-bg,#fff8e1);border-left:4px solid #f59e0b;margin-bottom:1.5rem">
+      <strong>Safety:</strong> Always replace with the <em>exact same amperage</em>. Installing a higher-rated fuse will not protect the circuit and may cause wiring damage or fire.
+    </div>
+
+    <form id="fl-form" role="search" aria-label="Fuse code search">
+      <label for="fl-input"><strong>Fuse code, type, color, or amperage</strong></label>
+      <input
+        id="fl-input"
+        type="search"
+        placeholder="e.g. ATC15, ATM10, MAXI40, AGC5, blue, 30A&hellip;"
+        autocomplete="off"
+        autocorrect="off"
+        spellcheck="false"
+        style="display:block;width:100%;max-width:480px;padding:0.6rem 0.8rem;font-size:1rem;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--text);margin:0.4rem 0 1.25rem;"
+        aria-label="Fuse code search"
+      >
+    </form>
+
+    <p id="fl-hint" style="color:var(--muted);font-size:0.9rem">Start typing to search ATC, ATM, mini blade, maxi blade, and glass tube fuses.</p>
+    <div id="fl-results" aria-live="polite"></div>
+
+    <noscript>
+      <p class="answer-box">JavaScript is disabled &mdash; use the reference table below.</p>
+    </noscript>
+
+    <h2 style="margin-top:2.5rem">Full fuse reference table</h2>
+    <p>All fuse types covered in this lookup, with key specs at a glance.</p>
+
+    <h3>Standard blade (ATC / ATO)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Code</th><th>Amps</th><th>Color</th><th>Voltage</th><th>Dimensions</th><th>Common aliases</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ATC1</td><td>1 A</td><td>Black</td><td>32 V DC</td><td>19.1 × 18.6 × 5.1 mm</td><td>ATO1, F1A</td></tr>
+          <tr><td>ATC2</td><td>2 A</td><td>Gray</td><td>32 V DC</td><td>19.1 × 18.6 × 5.1 mm</td><td>ATO2, F2A</td></tr>
+          <tr><td>ATC3</td><td>3 A</td><td>Violet</td><td>32 V DC</td><td>19.1 × 18.6 × 5.1 mm</td><td>ATO3, F3A</td></tr>
+          <tr><td>ATC5</td><td>5 A</td><td>Tan/Beige</td><td>32 V DC</td><td>19.1 × 18.6 × 5.1 mm</td><td>ATO5, F5A</td></tr>
+          <tr><td>ATC7.5</td><td>7.5 A</td><td>Brown</td><td>32 V DC</td><td>19.1 × 18.6 × 5.1 mm</td><td>ATO7.5, F7.5A</td></tr>
+          <tr><td>ATC10</td><td>10 A</td><td>Red</td><td>32 V DC</td><td>19.1 × 18.6 × 5.1 mm</td><td>ATO10, F10A</td></tr>
+          <tr><td>ATC15</td><td>15 A</td><td>Blue</td><td>32 V DC</td><td>19.1 × 18.6 × 5.1 mm</td><td>ATO15, F15A</td></tr>
+          <tr><td>ATC20</td><td>20 A</td><td>Yellow</td><td>32 V DC</td><td>19.1 × 18.6 × 5.1 mm</td><td>ATO20, F20A</td></tr>
+          <tr><td>ATC25</td><td>25 A</td><td>Natural/Clear</td><td>32 V DC</td><td>19.1 × 18.6 × 5.1 mm</td><td>ATO25, F25A</td></tr>
+          <tr><td>ATC30</td><td>30 A</td><td>Green</td><td>32 V DC</td><td>19.1 × 18.6 × 5.1 mm</td><td>ATO30, F30A</td></tr>
+          <tr><td>ATC40</td><td>40 A</td><td>Orange</td><td>32 V DC</td><td>19.1 × 18.6 × 5.1 mm</td><td>ATO40, F40A</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Mini blade (ATM / APM)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Code</th><th>Amps</th><th>Color</th><th>Voltage</th><th>Dimensions</th><th>Common aliases</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ATM5</td><td>5 A</td><td>Tan/Beige</td><td>32 V DC</td><td>10.9 × 16.3 × 3.8 mm</td><td>APM5, mini blade 5A</td></tr>
+          <tr><td>ATM7.5</td><td>7.5 A</td><td>Brown</td><td>32 V DC</td><td>10.9 × 16.3 × 3.8 mm</td><td>APM7.5</td></tr>
+          <tr><td>ATM10</td><td>10 A</td><td>Red</td><td>32 V DC</td><td>10.9 × 16.3 × 3.8 mm</td><td>APM10, mini blade 10A</td></tr>
+          <tr><td>ATM15</td><td>15 A</td><td>Blue</td><td>32 V DC</td><td>10.9 × 16.3 × 3.8 mm</td><td>APM15</td></tr>
+          <tr><td>ATM20</td><td>20 A</td><td>Yellow</td><td>32 V DC</td><td>10.9 × 16.3 × 3.8 mm</td><td>APM20</td></tr>
+          <tr><td>ATM25</td><td>25 A</td><td>Natural/Clear</td><td>32 V DC</td><td>10.9 × 16.3 × 3.8 mm</td><td>APM25</td></tr>
+          <tr><td>ATM30</td><td>30 A</td><td>Green</td><td>32 V DC</td><td>10.9 × 16.3 × 3.8 mm</td><td>APM30</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Maxi blade (MAXI / PAL)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Code</th><th>Amps</th><th>Color</th><th>Voltage</th><th>Dimensions</th><th>Common aliases</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>MAXI20</td><td>20 A</td><td>Yellow</td><td>32 V DC</td><td>29.2 × 26.8 × 6.3 mm</td><td>PAL20</td></tr>
+          <tr><td>MAXI30</td><td>30 A</td><td>Green</td><td>32 V DC</td><td>29.2 × 26.8 × 6.3 mm</td><td>PAL30</td></tr>
+          <tr><td>MAXI40</td><td>40 A</td><td>Orange</td><td>32 V DC</td><td>29.2 × 26.8 × 6.3 mm</td><td>PAL40</td></tr>
+          <tr><td>MAXI50</td><td>50 A</td><td>Red</td><td>32 V DC</td><td>29.2 × 26.8 × 6.3 mm</td><td>PAL50</td></tr>
+          <tr><td>MAXI60</td><td>60 A</td><td>Blue</td><td>32 V DC</td><td>29.2 × 26.8 × 6.3 mm</td><td>PAL60</td></tr>
+          <tr><td>MAXI70</td><td>70 A</td><td>Tan/Beige</td><td>32 V DC</td><td>29.2 × 26.8 × 6.3 mm</td><td>PAL70</td></tr>
+          <tr><td>MAXI80</td><td>80 A</td><td>Black</td><td>32 V DC</td><td>29.2 × 26.8 × 6.3 mm</td><td>PAL80</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Glass tube (AGC / 3AG)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Code</th><th>Amps</th><th>Voltage</th><th>Dimensions</th><th>Common aliases</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>AGC1</td><td>1 A</td><td>250 V AC / 32 V DC</td><td>6.35 × 31.8 mm</td><td>AGC-1, 3AG1</td></tr>
+          <tr><td>AGC3</td><td>3 A</td><td>250 V AC / 32 V DC</td><td>6.35 × 31.8 mm</td><td>AGC-3, 3AG3</td></tr>
+          <tr><td>AGC5</td><td>5 A</td><td>250 V AC / 32 V DC</td><td>6.35 × 31.8 mm</td><td>AGC-5, 3AG5</td></tr>
+          <tr><td>AGC10</td><td>10 A</td><td>250 V AC / 32 V DC</td><td>6.35 × 31.8 mm</td><td>AGC-10, 3AG10</td></tr>
+          <tr><td>AGC15</td><td>15 A</td><td>250 V AC / 32 V DC</td><td>6.35 × 31.8 mm</td><td>AGC-15, 3AG15</td></tr>
+          <tr><td>AGC20</td><td>20 A</td><td>250 V AC / 32 V DC</td><td>6.35 × 31.8 mm</td><td>AGC-20, 3AG20</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Micro blade (ACS / micro2)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Code</th><th>Amps</th><th>Color</th><th>Voltage</th><th>Dimensions</th><th>Common aliases</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ACS5</td><td>5 A</td><td>Tan/Beige</td><td>32 V DC</td><td>8.6 × 11.1 × 3.1 mm</td><td>micro blade 5A, micro2 5A</td></tr>
+          <tr><td>ACS10</td><td>10 A</td><td>Red</td><td>32 V DC</td><td>8.6 × 11.1 × 3.1 mm</td><td>micro blade 10A, micro2 10A</td></tr>
+          <tr><td>ACS15</td><td>15 A</td><td>Blue</td><td>32 V DC</td><td>8.6 × 11.1 × 3.1 mm</td><td>micro blade 15A, micro2 15A</td></tr>
+          <tr><td>ACS20</td><td>20 A</td><td>Yellow</td><td>32 V DC</td><td>8.6 × 11.1 × 3.1 mm</td><td>micro blade 20A, micro2 20A</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Related reference</h2>
+    <ul>
+      <li><a href="../cheat-sheets/fuse-color-codes.html">Fuse color code chart</a></li>
+      <li><a href="../fuses/atc.html">ATC / ATO fuse guide</a></li>
+      <li><a href="../fuses/mini-blade.html">Mini blade fuse guide</a></li>
+      <li><a href="../fuses/maxi-blade.html">Maxi blade fuse guide</a></li>
+      <li><a href="../fuses/agc.html">AGC glass tube fuse guide</a></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">SpecFits</p>
+        <p class="footer-tagline">Free compatibility reference for batteries, bulb bases, fuses, fasteners, and cables.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Reference</p>
+        <ul>
+          <li><a href="/batteries/index.html">Batteries</a></li>
+          <li><a href="/light-bulbs/index.html">Light Bulbs</a></li>
+          <li><a href="/bulb-bases/index.html">Bulb Bases</a></li>
+          <li><a href="/fuses/index.html">Fuses</a></li>
+          <li><a href="/fasteners/index.html">Fasteners</a></li>
+          <li><a href="/cables/index.html">Cables</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Guides &amp; Tools</p>
+        <ul>
+          <li><a href="/device-guides/index.html">Device Guides</a></li>
+          <li><a href="/identification-guides/index.html">ID Guides</a></li>
+          <li><a href="/tools/battery-finder.html">Battery Lookup</a></li>
+          <li><a href="/tools/bulb-base-identifier.html">Bulb Base ID</a></li>
+          <li><a href="/cheat-sheets/index.html">Cheat Sheets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Company</p>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Use</a></li>
+          <li><a href="#" data-action="cookie-prefs">Cookie Preferences</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SpecFits &mdash; Free informational reference. Verify device requirements before replacing a part.</p>
+    </div>
+  </div>
+</footer>
+  <div id="fs-cb" role="dialog" aria-label="Cookie preferences">
+    <div id="fs-cb-in">
+      <p class="fs-cb-text">We use cookies to serve relevant ads that keep this site free. <a href="/privacy-policy.html">Privacy&nbsp;Policy</a></p>
+      <div class="fs-cb-actions">
+        <button class="fs-cb-btn fs-cb-decline" type="button" onclick="fsCB('declined')">Reject Non-Essential</button>
+        <button class="fs-cb-btn fs-cb-accept" type="button" onclick="fsCB('accepted')">Accept All Cookies</button>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/fuse-lookup.js"></script>
+  <script>
+    function fsCB(c) {
+      localStorage.setItem('fs_cc', c);
+      document.getElementById('fs-cb').classList.add('fs-cb-hidden');
+      if (c === 'accepted' && window.gtag) gtag('consent', 'update', {ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
+    }
+    if (localStorage.getItem('fs_cc')) document.getElementById('fs-cb').classList.add('fs-cb-hidden');
+    document.addEventListener('click', function(e) {
+      var t = e.target;
+      if (t && (t.dataset.action === 'cookie-prefs' || t.id === 'open-cookie-prefs' || t.classList.contains('open-cookie-prefs'))) {
+        e.preventDefault();
+        localStorage.removeItem('fs_cc');
+        document.getElementById('fs-cb').classList.remove('fs-cb-hidden');
+      }
+    });
+  </script>
+</body>
+</html>

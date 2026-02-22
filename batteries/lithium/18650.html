@@ -1,0 +1,182 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>18650 Battery — Specs, Voltage, Protected vs Unprotected | SpecFits</title>
+  <meta name="description" content="18650 Li-ion battery specs: 18×65mm, 3.6–3.7V nominal, 4.2V max, 1800–3500mAh. Protected vs unprotected, flat-top vs button-top, and compatibility notes.">
+  <link rel="canonical" href="https://specfits.com/batteries/lithium/18650.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="18650 Battery — Specs, Voltage, Protected vs Unprotected | SpecFits">
+  <meta property="og:description" content="18650 Li-ion specs, protection circuit explained, flat vs button top, and common devices.">
+  <meta property="og:url" content="https://specfits.com/batteries/lithium/18650.html">
+  <meta property="og:site_name" content="SpecFits">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"TechArticle","name":"18650 Battery","url":"https://specfits.com/batteries/lithium/18650.html","description":"18650 Li-ion battery specifications and compatibility guide."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://specfits.com/"},{"@type":"ListItem","position":2,"name":"Batteries","item":"https://specfits.com/batteries/"},{"@type":"ListItem","position":3,"name":"Lithium","item":"https://specfits.com/batteries/lithium/"},{"@type":"ListItem","position":4,"name":"18650"}]}]}
+  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied",wait_for_update:500});if(localStorage.getItem("fs_cc")==="accepted")gtag("consent","update",{ad_storage:"granted",ad_user_data:"granted",ad_personalization:"granted",analytics_storage:"granted"});</script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p class="brand"><a href="../../index.html">SpecFits</a></p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../../batteries/index.html">Batteries</a></li>
+          <li><a href="../../light-bulbs/index.html">Light Bulbs</a></li>
+          <li><a href="../../bulb-bases/index.html">Bulb Bases</a></li>
+          <li><a href="../../fuses/index.html">Fuses</a></li>
+          <li><a href="../../fasteners/index.html">Fasteners</a></li>
+          <li><a href="../../cables/index.html">Cables</a></li>
+          <li class="has-dropdown"><a href="../../device-guides/index.html">Guides</a>
+            <ul class="dropdown">
+              <li><a href="../../device-guides/index.html">Device Guides</a></li>
+              <li><a href="../../identification-guides/index.html">ID Guides</a></li>
+              <li><a href="../../cheat-sheets/index.html">Cheat Sheets</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown"><a href="../../tools/index.html">Tools</a>
+            <ul class="dropdown">
+              <li><a href="../../tools/battery-finder.html">Battery Lookup</a></li>
+              <li><a href="../../tools/bulb-base-identifier.html">Bulb Base ID</a></li>
+              <li><a href="../../tools/fuse-lookup.html">Fuse Lookup</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="../../index.html">Home</a></li><li><a href="../index.html">Batteries</a></li><li><a href="index.html">Lithium</a></li><li>18650</li></ol></nav>
+    <h1>18650 battery reference</h1>
+    <p class="answer-box">The 18650 is an 18&thinsp;mm &times; 65&thinsp;mm lithium-ion rechargeable cell. It is NOT a drop-in replacement for AA batteries — the voltage (3.6&ndash;3.7 V) is more than double that of an AA (1.5 V).</p>
+
+    <h2>Specifications</h2>
+    <table>
+      <tr><th>Property</th><th>Value</th></tr>
+      <tr><td>Diameter</td><td>18.6 mm</td></tr>
+      <tr><td>Length</td><td>65.2 mm (unprotected); up to 69 mm (protected)</td></tr>
+      <tr><td>Nominal voltage</td><td>3.6&ndash;3.7 V</td></tr>
+      <tr><td>Fully charged voltage</td><td>4.2 V</td></tr>
+      <tr><td>Minimum discharge voltage</td><td>2.5&ndash;3.0 V (varies by cell)</td></tr>
+      <tr><td>Typical capacity</td><td>1800&ndash;3500 mAh</td></tr>
+      <tr><td>Chemistry</td><td>Lithium-ion (Li-NMC, Li-NCA, LiFePO<sub>4</sub> variants)</td></tr>
+      <tr><td>Charge rate</td><td>Typically 0.5&ndash;1 C; check manufacturer spec</td></tr>
+      <tr><td>Cycle life</td><td>300&ndash;500+ cycles to 80% capacity</td></tr>
+    </table>
+
+    <h2>Protected vs unprotected</h2>
+    <table>
+      <tr><th>Type</th><th>Has PCB circuit?</th><th>Length</th><th>When to use</th></tr>
+      <tr><td>Unprotected</td><td>No</td><td>~65 mm</td><td>Devices with built-in protection (most modern flashlights, laptops, EV packs)</td></tr>
+      <tr><td>Protected</td><td>Yes — prevents overcharge, over-discharge, short circuit</td><td>~68&ndash;69 mm</td><td>Devices without board-level protection, single-cell devices</td></tr>
+    </table>
+    <p>Important: always check that a protected cell physically fits your device. The added PCB adds ~3&ndash;4 mm to length.</p>
+
+    <h2>Flat-top vs button-top</h2>
+    <table>
+      <tr><th>Type</th><th>Positive terminal</th><th>Use</th></tr>
+      <tr><td>Flat-top</td><td>Flush positive pole</td><td>Devices with spring contacts or direct cell holders</td></tr>
+      <tr><td>Button-top</td><td>Small raised nub (~0.5&ndash;1 mm)</td><td>Devices designed for AA-style cells or requiring positive contact clearance</td></tr>
+    </table>
+
+    <h2>Common devices using 18650</h2>
+    <ul>
+      <li>High-performance flashlights (most Fenix, Olight, Nitecore models)</li>
+      <li>Laptop battery packs (multi-cell)</li>
+      <li>Power banks (multi-cell)</li>
+      <li>Vaping/e-cigarette mods</li>
+      <li>Electric vehicle battery packs (Tesla Model S/3/X/Y, many others)</li>
+      <li>Cordless power tools (some models)</li>
+    </ul>
+
+    <h2>Safety notes</h2>
+    <ul>
+      <li>Only charge with a charger rated for Li-ion cells at the correct voltage</li>
+      <li>Never charge a damaged, dented, or leaking cell</li>
+      <li>Do not short circuit — Li-ion cells can deliver extremely high current and will overheat</li>
+      <li>Store at 40&ndash;60% charge if storing long-term</li>
+      <li>Do not dispose in household trash — recycle at a battery drop-off point</li>
+    </ul>
+
+    <h2>See also</h2>
+    <ul>
+      <li><a href="21700.html">21700 battery reference</a></li>
+      <li><a href="comparisons/18650-vs-21700.html">18650 vs 21700 comparison</a></li>
+      <li><a href="cr123a.html">CR123A reference</a></li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">SpecFits</p>
+        <p class="footer-tagline">Free compatibility reference for batteries, bulb bases, fuses, fasteners, and cables.</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Reference</p>
+        <ul>
+          <li><a href="/batteries/index.html">Batteries</a></li>
+          <li><a href="/light-bulbs/index.html">Light Bulbs</a></li>
+          <li><a href="/bulb-bases/index.html">Bulb Bases</a></li>
+          <li><a href="/fuses/index.html">Fuses</a></li>
+          <li><a href="/fasteners/index.html">Fasteners</a></li>
+          <li><a href="/cables/index.html">Cables</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Guides &amp; Tools</p>
+        <ul>
+          <li><a href="/device-guides/index.html">Device Guides</a></li>
+          <li><a href="/identification-guides/index.html">ID Guides</a></li>
+          <li><a href="/tools/battery-finder.html">Battery Lookup</a></li>
+          <li><a href="/tools/bulb-base-identifier.html">Bulb Base ID</a></li>
+          <li><a href="/cheat-sheets/index.html">Cheat Sheets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Company</p>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Use</a></li>
+          <li><a href="#" data-action="cookie-prefs">Cookie Preferences</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SpecFits &mdash; Free informational reference. Verify device requirements before replacing a part.</p>
+    </div>
+  </div>
+</footer>
+  <div id="fs-cb" role="dialog" aria-label="Cookie preferences">
+    <div id="fs-cb-in">
+      <p class="fs-cb-text">We use cookies to serve relevant ads that keep this site free. <a href="/privacy-policy.html">Privacy&nbsp;Policy</a></p>
+      <div class="fs-cb-actions">
+        <button class="fs-cb-btn fs-cb-decline" type="button" onclick="fsCB('declined')">Reject Non-Essential</button>
+        <button class="fs-cb-btn fs-cb-accept" type="button" onclick="fsCB('accepted')">Accept All Cookies</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function fsCB(c) {
+      localStorage.setItem('fs_cc', c);
+      document.getElementById('fs-cb').classList.add('fs-cb-hidden');
+      if (c === 'accepted' && window.gtag) gtag('consent', 'update', {ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
+    }
+    if (localStorage.getItem('fs_cc')) document.getElementById('fs-cb').classList.add('fs-cb-hidden');
+    document.addEventListener('click', function(e) {
+      var t = e.target;
+      if (t && (t.dataset.action === 'cookie-prefs' || t.id === 'open-cookie-prefs' || t.classList.contains('open-cookie-prefs'))) {
+        e.preventDefault();
+        localStorage.removeItem('fs_cc');
+        document.getElementById('fs-cb').classList.remove('fs-cb-hidden');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Redirect bare directory paths to index.html (handled natively by CF Pages, but explicit for clarity)
+/batteries /batteries/index.html 301
+/light-bulbs /light-bulbs/index.html 301
+/bulb-bases /bulb-bases/index.html 301
+/fuses /fuses/index.html 301
+/fasteners /fasteners/index.html 301
+/cables /cables/index.html 301
+/device-guides /device-guides/index.html 301
+/identification-guides /identification-guides/index.html 301
+/cheat-sheets /cheat-sheets/index.html 301
+/tools /tools/index.html 301

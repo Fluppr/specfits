@@ -93,7 +93,6 @@
     btn.id = 'units-toggle';
     btn.innerHTML =
       '<span class="units-opt" data-val="metric">mm</span>' +
-      '<span class="units-sep">/</span>' +
       '<span class="units-opt" data-val="imperial">in</span>';
     markActive(btn);
 

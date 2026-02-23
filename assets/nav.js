@@ -21,6 +21,19 @@
     });
   });
 
+  // Two-tone wordmark: split "SpecFits" into Spec + Fits spans
+  var brandLink = document.querySelector('.brand a');
+  if (brandLink) {
+    var child = Array.from(brandLink.childNodes).find(function (n) {
+      return n.nodeType === 3 && /SpecFits/i.test(n.textContent);
+    });
+    if (child) {
+      var wrap = document.createElement('span');
+      wrap.innerHTML = '<span class="brand-spec">Spec</span><span class="brand-accent">Fits</span>';
+      brandLink.replaceChild(wrap, child);
+    }
+  }
+
   // Close nav when clicking outside header
   document.addEventListener('click', function (e) {
     if (!e.target.closest('header')) {

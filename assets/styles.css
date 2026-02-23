@@ -64,42 +64,52 @@ header {
 header .container {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
+  gap: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 56px;
   flex-wrap: wrap;
 }
 
+/* ─── Logo mark ───────────────────────────── */
+
+.logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 7px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  flex-shrink: 0;
+  line-height: 1;
+  position: relative;
+  top: -1px;
+}
+
 .brand {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 800;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   margin: 0;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .brand a {
   text-decoration: none;
   color: var(--text);
-  position: relative;
-}
-
-.brand a::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--accent-mid);
-  border-radius: 2px;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.18s ease;
-}
-
-.brand a:hover::after {
-  transform: scaleX(1);
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .brand a:hover {
@@ -107,8 +117,59 @@ header .container {
   text-decoration: none;
 }
 
+/* ─── Hamburger toggle ────────────────────── */
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.45rem;
+  margin-left: auto;
+  border-radius: var(--radius-sm);
+  transition: background 0.12s;
+  height: 36px;
+  width: 36px;
+  flex-shrink: 0;
+}
+
+.nav-toggle:hover {
+  background: var(--surface-hover);
+}
+
+.nav-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.22s ease, opacity 0.15s ease;
+  transform-origin: center;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ─── Nav ─────────────────────────────────── */
+
 nav {
   flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 nav ul {
@@ -116,8 +177,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 0.15rem;
-  flex-wrap: wrap;
+  gap: 0.1rem;
   align-items: center;
 }
 
@@ -130,7 +190,7 @@ nav a {
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 500;
-  padding: 0.3rem 0.65rem;
+  padding: 0.3rem 0.6rem;
   border-radius: var(--radius-sm);
   transition: background 0.12s, color 0.12s;
   display: block;
@@ -155,7 +215,7 @@ nav a:hover {
 .dropdown {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 4px);
   left: 0;
   background: var(--bg);
   border: 1px solid var(--border);
@@ -164,20 +224,8 @@ nav a:hover {
   min-width: 185px;
   z-index: 200;
   padding: 0.4rem;
-  padding-top: calc(0.4rem + 6px);
   list-style: none;
   margin: 0;
-}
-
-/* Invisible bridge fills the gap so moving the mouse into the dropdown
-   doesn't lose hover state */ 
-.dropdown::before {
-  content: '';
-  position: absolute;
-  top: -6px;
-  left: 0;
-  right: 0;
-  height: 6px;
 }
 
 .has-dropdown:hover .dropdown,
@@ -201,6 +249,141 @@ nav a:hover {
 .dropdown a:hover {
   background: var(--surface-hover);
   color: var(--accent-mid);
+}
+
+/* ─── Mobile nav ──────────────────────────── */
+
+@media (max-width: 768px) {
+  header .container {
+    height: auto;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    height: auto;
+    flex: 1;
+  }
+
+  .brand a {
+    height: auto;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    flex: none;
+    height: auto;
+    border-top: 1px solid var(--border);
+    margin-top: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
+  nav.open {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  nav > ul > li {
+    width: 100%;
+  }
+
+  nav a {
+    padding: 0.55rem 0.5rem;
+    font-size: 0.9rem;
+    white-space: normal;
+  }
+
+  .has-dropdown > a::after {
+    float: right;
+    margin-top: 2px;
+  }
+
+  .dropdown {
+    position: static;
+    box-shadow: none;
+    border: none;
+    border-left: 3px solid var(--accent-border);
+    border-radius: 0;
+    margin: 0 0 0 1rem;
+    padding: 0.2rem 0;
+    background: transparent;
+    display: none;
+  }
+
+  .has-dropdown.open .dropdown {
+    display: block;
+  }
+
+  .has-dropdown:hover .dropdown,
+  .has-dropdown:focus-within .dropdown {
+    display: none;
+  }
+
+  .has-dropdown.open .dropdown {
+    display: block;
+  }
+
+  .dropdown a {
+    font-size: 0.875rem;
+    padding: 0.45rem 0.8rem;
+    color: var(--muted);
+  }
+}
+
+/* ─── Units toggle pill ───────────────────── */
+
+.units-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 20px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  transition: border-color 0.12s, box-shadow 0.12s;
+  flex-shrink: 0;
+  line-height: 1;
+  height: 28px;
+  white-space: nowrap;
+}
+
+.units-toggle:hover {
+  border-color: var(--accent-mid);
+  box-shadow: 0 0 0 2px var(--accent-soft);
+}
+
+.units-opt {
+  padding: 0 0.25rem;
+  color: var(--subtle);
+  transition: color 0.12s;
+}
+
+.units-opt.active {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.units-sep {
+  color: var(--border-strong);
+  margin: 0 0.05rem;
 }
 
 /* ─── General links ──────────────────────── */

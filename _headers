@@ -5,10 +5,10 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
 /assets/*.css
-  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+  Cache-Control: public, max-age=3600, stale-while-revalidate=300
 
 /assets/*.js
-  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+  Cache-Control: public, max-age=3600, stale-while-revalidate=300
 
 /data/*.json
   Cache-Control: public, max-age=86400, stale-while-revalidate=3600

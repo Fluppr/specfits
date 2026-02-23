@@ -1,3 +1,6 @@
+# Redirect www to non-www (canonical domain)
+https://www.specfits.com/* https://specfits.com/:splat 301
+
 # Redirect bare directory paths to index.html (handled natively by CF Pages, but explicit for clarity)
 /batteries /batteries/index.html 301
 /light-bulbs /light-bulbs/index.html 301

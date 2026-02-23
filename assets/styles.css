@@ -64,11 +64,10 @@ header {
 header .container {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  height: 56px;
-  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  flex-wrap: nowrap;
 }
 
 /* ─── Brand / wordmark ───────────────────── */
@@ -83,9 +82,7 @@ header .container {
   letter-spacing: -0.03em;
   margin: 0;
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  height: 100%;
+  line-height: 1;
 }
 
 .brand a {
@@ -93,8 +90,7 @@ header .container {
   color: var(--text);
   display: flex;
   align-items: center;
-  height: 100%;
-  gap: 0;
+  line-height: 1;
 }
 
 .brand a:hover {
@@ -162,7 +158,6 @@ nav {
   flex: 1;
   display: flex;
   align-items: center;
-  height: 100%;
 }
 
 nav ul {
@@ -248,20 +243,18 @@ nav a:hover {
 
 @media (max-width: 768px) {
   header .container {
-    height: auto;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
-    gap: 0;
+    gap: 0.5rem;
     flex-wrap: wrap;
   }
 
   .brand {
-    height: auto;
     flex: 1;
   }
 
   .brand a {
-    height: auto;
+    display: flex;
   }
 
   .nav-toggle {
@@ -349,11 +342,10 @@ nav a:hover {
   cursor: pointer;
   flex-shrink: 0;
   white-space: nowrap;
-  transition: border-color 0.15s;
 }
 
-.units-toggle:hover {
-  border-color: var(--accent-mid);
+.units-toggle:hover .units-opt:not(.active) {
+  color: var(--text);
 }
 
 .units-opt {
